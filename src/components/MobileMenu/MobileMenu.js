@@ -46,7 +46,7 @@ export const StyledDialogOverlay = styled(DialogOverlay)`
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(220deg 5% 40% / 0.8);
+  background: var(--color-backdrop);
 `;
 
 export const StyledDialogContent = styled(DialogContent)`

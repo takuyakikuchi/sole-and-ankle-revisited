@@ -75,6 +75,7 @@ html {
   --color-gray-900: hsl(220deg 3% 20%);
   --color-primary: hsl(340deg 65% 47%);
   --color-secondary: hsl(240deg 60% 63%);
+  --color-backdrop: hsl(220deg 5% 40% / 0.8);
   /*
     Silence the warning about missing Reach Dialog styles
   */
