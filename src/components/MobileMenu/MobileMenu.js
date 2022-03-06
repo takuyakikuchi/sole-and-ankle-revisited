@@ -65,8 +65,9 @@ export const StyledDialogContent = styled(DialogContent)`
 
 export const CloseButton = styled(UnstyledButton)`
   position: absolute;
-  top: var(--spacing);
-  right: 22px;
+  top: 10px;
+  right: 0;
+  padding: 22px;
 `;
 
 export const Spacer = styled.div`
