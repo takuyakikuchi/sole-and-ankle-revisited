@@ -17,6 +17,8 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
           <Icon id="close" strokeWidth={1} />
           <VisuallyHidden>Close menu</VisuallyHidden>
         </CloseButton>
+
+        <Spacer />
         
         <MenuNav>
           <NavLink active href="/sale">Sale</NavLink>
@@ -67,6 +69,10 @@ export const CloseButton = styled(UnstyledButton)`
   right: 22px;
 `;
 
+export const Spacer = styled.div`
+  flex: 1;
+`;
+
 export const NavLink = styled.a`
   text-decoration: none;
   color: ${({ active }) => (active ? 'var(--color-secondary)' : 'var(--color-gray-900)')};
@@ -75,7 +81,6 @@ export const NavLink = styled.a`
 `;
 
 export const MenuNav = styled.nav`
-  margin: auto 0;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -88,10 +93,10 @@ export const FooterLink = styled.a`
 `;
 
 export const MenuFooter = styled.footer`
-  position: absolute;
-  bottom: var(--spacing);
   display: flex;
+  flex: 1;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 14px;
 `;
 
