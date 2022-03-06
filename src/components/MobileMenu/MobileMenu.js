@@ -84,6 +84,7 @@ export const MenuNav = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 22px;
+  text-transform: uppercase;
 `;
 
 export const FooterLink = styled.a`
