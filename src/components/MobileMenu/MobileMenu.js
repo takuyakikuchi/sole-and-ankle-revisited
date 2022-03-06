@@ -10,15 +10,12 @@ import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
 
 const MobileMenu = ({ isOpen, onDismiss }) => {
-  if (!isOpen) {
-    return null;
-  }
-
   return (
     <StyledDialogOverlay isOpen={isOpen} onDismiss={onDismiss}>
       <StyledDialogContent area-label="Mobile menu">
         <CloseButton onClick={onDismiss}>
           <Icon id="close" strokeWidth={1} />
+          <VisuallyHidden>Close menu</VisuallyHidden>
         </CloseButton>
         
         <MenuNav>
