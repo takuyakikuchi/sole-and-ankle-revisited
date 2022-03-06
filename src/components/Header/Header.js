@@ -21,9 +21,9 @@ const Header = () => {
     <header>
       <SuperHeader />
       <MainHeader>
-        <Side>
+        <LogoWrapper>
           <Logo />
-        </Side>
+        </LogoWrapper>
 
         <Nav>
           <NavLink href="/sale">Sale</NavLink>
@@ -34,7 +34,7 @@ const Header = () => {
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
 
-        <Side />
+        <Spacer />
 
         <MobileNav>
           <UnstyledButton>
@@ -71,6 +71,15 @@ const MainHeader = styled.div`
   @media ${QUERIES.tabletAndDown} {
     border-top: 4px solid var(--color-gray-900);
     align-items: center;
+    justify-content: space-between;
+  }
+`;
+
+const LogoWrapper = styled.div`
+  flex: 1;
+
+  @media ${QUERIES.tabletAndDown} {
+    flex: revert;
   }
 `;
 
@@ -101,8 +110,12 @@ const MobileNav = styled.nav`
   }
 `;
 
-const Side = styled.div`
+const Spacer = styled.div`
   flex: 1;
+
+  @media ${QUERIES.tabletAndDown} {
+    display: none;
+  }
 `;
 
 const NavLink = styled.a`

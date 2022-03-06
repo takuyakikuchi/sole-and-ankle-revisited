@@ -13,11 +13,13 @@ const Logo = (props) => {
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 `;
 
 const Wrapper = styled.h1`
   font-size: 1.5rem;
   font-weight: ${WEIGHTS.bold};
+  width: fit-content
 `;
 
 export default Logo;
