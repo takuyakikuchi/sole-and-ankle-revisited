@@ -59,7 +59,6 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: fit-content;
   border-bottom: 1px solid var(--color-gray-300);
   overflow: auto;
 
@@ -99,7 +98,7 @@ const MobileNav = styled.nav`
     display: flex;
     gap: clamp(
       1.5rem,
-      7.5vw - 1.25rem,
+      9.5vw - 4rem,
       3rem
     );
   }
